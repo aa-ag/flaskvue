@@ -11,6 +11,9 @@ DEBUG = True
 app = Flask(__name__)
 app.config.from_object(__name__)
 
+# enable CORS
+CORS(app, resources={r'/*': {'origins': '*'}})
+
 ############------------ FUNCTION(S) ------------############
 
 
