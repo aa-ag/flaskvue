@@ -1,5 +1,6 @@
 ############------------ IMPORTS ------------############
 from crypt import methods
+from lib2to3.pgen2 import driver
 from flask import Flask, jsonify
 from flask_cors import CORS
 from itsdangerous import json
@@ -24,3 +25,5 @@ def hello_world():
 
 
 ############------------ DRIVER CODE ------------############
+if __name__ == "__main__":
+    app.run()
