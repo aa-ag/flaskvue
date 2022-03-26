@@ -10,7 +10,7 @@ export default new VueRouter({
   routes: [
     {
       path: '/hello',
-      name: 'hello',
+      name: 'HelloWorld',
       component: HelloWorld,
     },
   ],

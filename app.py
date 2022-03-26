@@ -18,7 +18,7 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 ############------------ FUNCTION(S) ------------############
 @app.route('/hello', methods=['GET'])
 def hello_world():
-    return jsonify('world')
+    return jsonify('world, bb!')
 
 
 ############------------ DRIVER CODE ------------############
