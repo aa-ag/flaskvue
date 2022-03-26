@@ -1,6 +1,6 @@
 <template>
   <div>
-    <p>{{ message }}</p>
+    <p>{{ msg }}</p>
   </div>
 </template>
 
@@ -9,7 +9,7 @@
     name: 'hello',
     data() {
       return {
-        message: 'world!',
+        msg: 'world!',
       };
     },
   };
