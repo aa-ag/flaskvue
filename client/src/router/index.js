@@ -1,5 +1,6 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
+import Books from '../components/Books.vue';
 import HelloWorld from '../components/HelloWorld.vue';
 
 Vue.use(VueRouter);
