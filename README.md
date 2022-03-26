@@ -15,3 +15,4 @@ Using this repo to make a single-page app using Flask & Vue.js, following Michae
 - `vue create client`
 - `npm install axios`
 - `npm run serve`
+- `npm install bootstrap`
