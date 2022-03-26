@@ -10,3 +10,4 @@ Using this repo to make a single-page app using Flask & Vue.js, following Michae
 - `conda install Flask`
 - `conda install Flask-Cors`
 - `npm install vue`
+- `vue create client`
