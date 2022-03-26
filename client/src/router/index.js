@@ -9,6 +9,11 @@ export default new VueRouter({
   base: process.env.BASE_URL,
   routes: [
     {
+      path: '/',
+      name: 'Books',
+      component: Books,
+    },
+    {
       path: '/hello',
       name: 'HelloWorld',
       component: HelloWorld,
