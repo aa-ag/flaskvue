@@ -6,9 +6,12 @@ Using this repo to make a single-page app using Flask & Vue.js, following Michae
 
 - `conda create -n flaskvue`
 - `conda activate flaskvue`
+#### backend
 - `conda install python`
 - `conda install Flask`
 - `conda install Flask-Cors`
+#### frontend
 - `npm install vue`
 - `vue create client`
+- `npm install axios`
 - `npm run serve`
