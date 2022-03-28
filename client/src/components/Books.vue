@@ -19,9 +19,9 @@
             </thead>
             <tbody>
               <tr>
-                <td>a</td>
-                <td>b</td>
-                <td>c</td>
+                <td>Test Title</td>
+                <td>Test Author</td>
+                <td>No</td>
                 <td>
                   <div class="btn-group" role="group">
                     <button 
