@@ -7,6 +7,18 @@
           <button type="button" class="btn btn-success btn-sm">
             Add Book
           </button>
+          <br><br>
+          <table class="table table-hoves">
+            <thead>
+              <tr>
+                <th scope="col">Title</th>
+                <th scope="col">Author</th>
+                <th scope="col">Read?</th>
+                <!-- <th></th> -->
+              </tr>
+            </thead>
+
+          </table>
         </div>
       </div>
   </div>
