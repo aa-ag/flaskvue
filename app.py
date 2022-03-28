@@ -40,6 +40,16 @@ def hello_world():
     return jsonify('world, bb!')
 
 
+@app.route('/books', methods=['GET'])
+def list_all_books():
+    return jsonify(
+        {
+            'status': 'sucess',
+            'books': BOOKS
+        }
+    )
+
+
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     app.run()
