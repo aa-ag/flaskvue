@@ -25,6 +25,12 @@
                   <span v-if="book.read">Yes</span>
                   <span v-else>No</span>
                 </td>
+                <td>
+                  <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-warning btn-sm">Update</button>
+                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
+                  </div>
+                </td>
               </tr>
             </tbody>
           </table>
@@ -33,16 +39,16 @@
   </div>
 </template>
 <script>
-import axios from "axios"
+import axios from 'axios';
 
 export default {
   data() {
     return {
-      books: []
+      books: [],
     };
   },
   methods: {
-    getbooks() {
+    getBooks() {
       const path = 'http://localhost:5000/books';
       axios.get(path)
         .then((res) => {
@@ -55,7 +61,7 @@ export default {
     },
   },
   created() {
-    this.getbooks();
+    this.getBooks();
   },
 };
 </script>
