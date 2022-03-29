@@ -18,15 +18,12 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>Test Title</td>
-                <td>Test Author</td>
-                <td>No</td>
+              <tr v-for="(book, index) in books" :key="index">
+                <td>{{ book.title }}</td>
+                <td>{{ book.author }}</td>
                 <td>
-                  <div class="btn-group" role="group">
-                    <button type="button" class="btn btn-warning btn-sm">Update</button>
-                    <button type="button" class="btn btn-danger btn-sm">Delete</button>
-                  </div>
+                  <span v-if="book.read">Yes</span>
+                  <span v-else>No</span>
                 </td>
               </tr>
             </tbody>
