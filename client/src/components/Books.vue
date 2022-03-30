@@ -68,6 +68,7 @@
         </b-form-checkbox-group>
       </b-form-group>
       </b-form>
+      <b-button type="submit" variant="primary">Submit</b-button>
     </b-modal>
   </div>
 </template>
