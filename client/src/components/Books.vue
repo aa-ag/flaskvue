@@ -52,6 +52,16 @@
                       placeholder="Enter title">
         </b-form-input>
       </b-form-group>
+      <b-form-group id="form-author-group"
+                    label="Author"
+                    label-for="form-author-input">
+        <b-form-input id="form-author-input"
+                      type="text"
+                      v-model="addBookForm.author"
+                      required
+                      placeholder="Enter author">
+        </b-form-input>
+      </b-form-group>
   </div>
 </template>
 <script>
