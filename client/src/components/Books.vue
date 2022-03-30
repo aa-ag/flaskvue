@@ -36,7 +36,7 @@
           </table>
         </div>
       </div>
-    <b-modal 
+    <b-modal
       ref="addBookModal"
       id="book-modal"
       title="Add a new book"
