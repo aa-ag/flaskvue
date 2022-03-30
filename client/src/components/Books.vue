@@ -41,7 +41,17 @@
       id="book-modal"
       title="Add a new book"
       hide-footer>
-
+      <b-form @submit="onSubmit" @reset="onReset" class="w-100">
+      <b-form-group id="form-title-group"
+                    label="Title"
+                    label-for="form-title-input">
+        <b-form-input id="form-title-input"
+                      type="text"
+                      v-model="addBookForm.title"
+                      required
+                      placeholder="Enter title">
+        </b-form-input>
+      </b-form-group>
   </div>
 </template>
 <script>
