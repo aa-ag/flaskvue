@@ -36,6 +36,12 @@
           </table>
         </div>
       </div>
+    <b-modal 
+      ref="addBookModal"
+      id="book-modal"
+      title="Add a new book"
+      hide-footer>
+
   </div>
 </template>
 <script>
