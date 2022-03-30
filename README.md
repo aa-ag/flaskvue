@@ -16,3 +16,12 @@ Using this repo to make a single-page app using Flask & Vue.js, following Michae
 - `npm install axios`
 - `npm run serve`
 - `npm install bootstrap`
+
+### curl
+
+#### POST
+```
+curl -X POST http://localhost:5000/books -d \
+'{"title": "test", "author": "test", "read": "true"}' \
+-H 'Content-Type: application/json'
+```
