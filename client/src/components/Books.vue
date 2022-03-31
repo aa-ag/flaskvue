@@ -111,6 +111,11 @@ export default {
           this.getBooks();
         });
     },
+    initForm() {
+      this.addBookForm.title = '';
+      this.addBookForm.author = '';
+      this.addBookForm.read = [];
+    },
   },
   created() {
     this.getBooks();
