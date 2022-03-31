@@ -99,6 +99,18 @@ export default {
           console.error(error);
         });
     },
+    addBook(payload) {
+      const path = 'http://localhost:5000/books';
+      axios.post(path, payload)
+        .then(() => {
+          this.getBooks();
+        })
+        .catch((error) => {
+          // eslint-disable-next-line
+          console.log(error);
+          this.getBooks();
+        });
+    },
   },
   created() {
     this.getBooks();
