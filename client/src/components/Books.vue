@@ -129,6 +129,11 @@ export default {
       this.addBook(payload);
       this.initForm();
     },
+    onReset(evt) {
+      evt.preventDefault();
+      this.$refs.addBookModal.hide();
+      this.initForm();
+    },
   },
   created() {
     this.getBooks();
