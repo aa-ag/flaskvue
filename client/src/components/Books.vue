@@ -80,6 +80,11 @@ export default {
   data() {
     return {
       books: [],
+      addBookForm: {
+        title: '',
+        author: '',
+        read: [],
+      },
     };
   },
   methods: {
