@@ -116,6 +116,19 @@ export default {
       this.addBookForm.author = '';
       this.addBookForm.read = [];
     },
+    onSubmit(evt) {
+      evt.preventDefault();
+      this.$refs.addBookModal.hide();
+      let read = false;
+      if (this.addBookForm.read[0]) read = true;
+      const payload = {
+        title: this.addBookForm.title,
+        author: this.addBookForm.author,
+        read, // property shorthand
+      };
+      this.addBook(payload);
+      this.initForm();
+    },
   },
   created() {
     this.getBooks();
