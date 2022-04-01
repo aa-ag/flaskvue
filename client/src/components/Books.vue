@@ -88,6 +88,9 @@ export default {
       },
     };
   },
+  components: {
+    alert: Alert,
+  },
   methods: {
     getBooks() {
       const path = 'http://localhost:5000/books';
