@@ -114,6 +114,7 @@ export default {
         .then(() => {
           this.getBooks();
           this.message = 'Added!';
+          this.showMessage = true;
         })
         .catch((error) => {
           // eslint-disable-next-line
