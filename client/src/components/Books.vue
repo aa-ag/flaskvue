@@ -90,6 +90,7 @@ export default {
         read: [],
       },
       message: '',
+      showMessage: false,
     };
   },
   components: {
@@ -112,6 +113,7 @@ export default {
       axios.post(path, payload)
         .then(() => {
           this.getBooks();
+          this.message = 'Added!';
         })
         .catch((error) => {
           // eslint-disable-next-line
