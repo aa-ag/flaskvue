@@ -5,7 +5,7 @@
         <h1>Books</h1>
         <hr><br><br>
         <!-- alert component -->
-        <alert :message="message"></alert>
+        <alert :message="message" v-if="showMessage"></alert>
         <!-- alert component -->
         <button type="button" class="btn btn-success btn-sm" v-b-modal.book-modal>Add Book</button>
         <br><br>
