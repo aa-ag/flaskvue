@@ -18,16 +18,19 @@ CORS(app, resources={r'/*': {'origins': '*'}})
 # dummy data to start
 BOOKS = [
     {
+        'id': uuid.uuid4().hex,
         'title': 'Narrative Economics',
         'author': 'Robert Schiller',
         'read': True
     },
     {
+        'id': uuid.uuid4().hex,
         'title': 'A Dog\'s Tale',
         'author': 'Mark Twain',
         'read': True
     },
     {
+        'id': uuid.uuid4().hex,
         'title': 'Fooled by Randomness',
         'author': 'Nassim Taleb',
         'read': True
