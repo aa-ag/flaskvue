@@ -105,6 +105,7 @@
     </b-form-group>
     <b-button-group>
       <b-button type="submit" variant="primary">Update</b-button>
+      <b-button type="reset" variant="danger">Cancel</b-button>
     </b-button-group>
   </b-form>
 </b-modal>
