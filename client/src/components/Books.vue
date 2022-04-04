@@ -98,6 +98,11 @@
                     placeholder="Enter author">
       </b-form-input>
     </b-form-group>
+    <b-form-group id="form-read-edit-group">
+      <b-form-checkbox-group v-model="editForm.read" id="form-checks">
+        <b-form-checkbox value="true">Read?</b-form-checkbox>
+      </b-form-checkbox-group>
+    </b-form-group>
   </b-form>
 </b-modal>
   </div>
