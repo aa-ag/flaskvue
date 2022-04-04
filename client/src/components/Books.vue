@@ -88,6 +88,16 @@
                     placeholder="Enter title">
       </b-form-input>
     </b-form-group>
+    <b-form-group id="form-author-edit-group"
+                  label="Author:"
+                  label-for="form-author-edit-input">
+      <b-form-input id="form-author-edit-input"
+                    type="text"
+                    v-model="editForm.author"
+                    required
+                    placeholder="Enter author">
+      </b-form-input>
+    </b-form-group>
   </b-form>
 </b-modal>
   </div>
