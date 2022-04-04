@@ -66,7 +66,12 @@ def list_all_books():
 
 @app.route('/books/<book_id>', methods=['PUT'])
 def book(book_id):
-    pass
+    for book in BOOKS:
+        if book['id'] == book_id:
+            BOOKS.remove(book)
+            return True
+    return False
+
 
 
 ############------------ DRIVER CODE ------------############
