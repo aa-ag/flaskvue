@@ -125,6 +125,12 @@ export default {
         author: '',
         read: [],
       },
+      editForm: {
+        id: '',
+        title: '',
+        author: '',
+        read: [],
+      },
       message: '',
       showMessage: false,
     };
