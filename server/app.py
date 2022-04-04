@@ -1,4 +1,5 @@
 ############------------ IMPORTS ------------############
+from crypt import methods
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import uuid
@@ -61,6 +62,11 @@ def list_all_books():
     else:
         response_object['books'] = BOOKS
     return jsonify(response_object)
+
+
+@app.route('/books/<book_id>', methods=['PUT'])
+def book(book_id):
+    pass
 
 
 ############------------ DRIVER CODE ------------############
