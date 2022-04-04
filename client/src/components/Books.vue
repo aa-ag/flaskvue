@@ -77,6 +77,8 @@
          id="book-update-modal"
          title="Update"
          hide-footer>
+  <b-form @submit="onSubmitUpdate" @reset="onResetUpdate" class="w-100">
+  </b-form>
 </b-modal>
   </div>
 </template>
