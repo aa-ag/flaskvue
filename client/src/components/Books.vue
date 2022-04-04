@@ -78,6 +78,16 @@
          title="Update"
          hide-footer>
   <b-form @submit="onSubmitUpdate" @reset="onResetUpdate" class="w-100">
+    <b-form-group id="form-title-edit-group"
+                label="Title:"
+                label-for="form-title-edit-input">
+      <b-form-input id="form-title-edit-input"
+                    type="text"
+                    v-model="editForm.title"
+                    required
+                    placeholder="Enter title">
+      </b-form-input>
+    </b-form-group>
   </b-form>
 </b-modal>
   </div>
