@@ -103,6 +103,9 @@
         <b-form-checkbox value="true">Read?</b-form-checkbox>
       </b-form-checkbox-group>
     </b-form-group>
+    <b-button-group>
+      <b-button type="submit" variant="primary">Update</b-button>
+    </b-button-group>
   </b-form>
 </b-modal>
   </div>
