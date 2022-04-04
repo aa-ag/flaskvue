@@ -73,6 +73,11 @@
         </b-button-group>
       </b-form>
     </b-modal>
+    <b-modal ref="editBookModal"
+         id="book-update-modal"
+         title="Update"
+         hide-footer>
+</b-modal>
   </div>
 </template>
 
