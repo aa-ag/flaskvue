@@ -174,9 +174,16 @@ export default {
         });
     },
     initForm() {
+      // to add a book
       this.addBookForm.title = '';
       this.addBookForm.author = '';
       this.addBookForm.read = [];
+      // to update a book
+      this.editForm.id = '';
+      this.editForm.title = '';
+      this.editForm.author = '';
+      this.editForm.read = [];
+
     },
     onSubmit(evt) {
       evt.preventDefault();
