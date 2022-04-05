@@ -214,6 +214,8 @@ export default {
     axios.put(path, payload)
       .then(() => {
         this.getBooks();
+        this.message = 'Book updated!';
+        this.showMessage = true;
       })
       .catch((error) => {
         // eslint-disable-next-line
