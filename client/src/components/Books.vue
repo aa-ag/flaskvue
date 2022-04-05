@@ -136,6 +136,9 @@ export default {
         title: '',
         author: '',
         read: [],
+        editBook(book) {
+          this.editForm = book;
+        }
       },
       message: '',
       showMessage: false,
