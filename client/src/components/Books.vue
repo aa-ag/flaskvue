@@ -196,6 +196,18 @@ export default {
       this.$refs.addBookModal.hide();
       this.initForm();
     },
+    onSubmitUpdate(evt) {
+      evt.preventDefault();
+      this.$refs.editBookModal.hide();
+      let read = false;
+      if (this.editForm.read[0]) read = true;
+      const payload = {
+        title: this.editForm.title,
+        author: this.editForm.author,
+        read,
+      };
+      this.updateBook(payload, this.editForm.id);
+    }
   },
   created() {
     this.getBooks();
