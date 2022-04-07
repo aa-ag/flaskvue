@@ -80,7 +80,13 @@ def book(book_id):
     return jsonify(response_object)
 
 
-
+def remove_book(book_id):
+    for book in BOOKS:
+        if book['id'] == book_id:
+            BOOKS.remove(book)
+            return True
+    return False
+    
 ############------------ DRIVER CODE ------------############
 if __name__ == "__main__":
     app.run()
