@@ -104,7 +104,13 @@
           </b-form-checkbox-group>
         </b-form-group>
         <b-button-group>
-          <b-button type="submit" variant="primary">Update</b-button>
+          <button
+                type="button"
+                class="btn btn-warning btn-sm"
+                v-b-modal.book-update-modal
+                @click="editBook(book)">
+            Update
+          </button>
           <b-button type="reset" variant="danger">Cancel</b-button>
         </b-button-group>
       </b-form>
