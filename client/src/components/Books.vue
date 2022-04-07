@@ -137,8 +137,6 @@ export default {
         author: '',
         read: [],
       },
-      message: '',
-      showMessage: false,
     };
   },
   components: {
@@ -169,6 +167,9 @@ export default {
           console.log(error);
           this.getBooks();
         });
+    },
+    editBook(book) {
+      this.editForm = book;
     },
     initForm() {
       // to add a book
