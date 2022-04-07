@@ -105,12 +105,11 @@
     </b-form-group>
     <b-button-group>
       <button
-          type="button"
-          class="btn btn-warning btn-sm"
-          v-b-modal.book-update-modal
-          @click="editBook(book)">
-        Update
-      </button>
+        type="button"
+        class="btn btn-warning btn-sm"
+        v-b-modal.book-update-modal
+        @click="editBook(book)">
+        Update</button>
       <b-button type="reset" variant="danger">Cancel</b-button>
     </b-button-group>
   </b-form>
@@ -138,7 +137,7 @@ export default {
         read: [],
         editBook(book) {
           this.editForm = book;
-        }
+        },
       },
       message: '',
       showMessage: false,
@@ -183,7 +182,6 @@ export default {
       this.editForm.title = '';
       this.editForm.author = '';
       this.editForm.read = [];
-
     },
     onSubmit(evt) {
       evt.preventDefault();
@@ -214,9 +212,9 @@ export default {
         read,
       };
       this.updateBook(payload, this.editForm.id);
-    }
     },
-    updateBook(payload, bookID) {
+  },
+  updateBook(payload, bookID) {
     const path = `http://localhost:5000/books/${bookID}`;
     axios.put(path, payload)
       .then(() => {
@@ -229,15 +227,15 @@ export default {
         console.error(error);
         this.getBooks();
       });
-    },
-    created() {
-      this.getBooks();
-    },
-    onResetUpdate(evt) {
-      evt.preventDefault();
-      this.$refs.editBookModal.hide();
-      this.initForm();
-      this.getBooks(); // why?
-    },
+  },
+  created() {
+    this.getBooks();
+  },
+  onResetUpdate(evt) {
+    evt.preventDefault();
+    this.$refs.editBookModal.hide();
+    this.initForm();
+    this.getBooks(); // why?
+  },
 };
 </script>
