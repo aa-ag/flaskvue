@@ -131,6 +131,8 @@ export default {
         author: '',
         read: [],
       },
+      message: '',
+      showMessage: false,
       editForm: {
         id: '',
         title: '',
