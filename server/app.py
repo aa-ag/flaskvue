@@ -65,7 +65,7 @@ def list_all_books():
 
 
 @app.route('/books/<book_id>', methods=['PUT'])
-def book(book_id):
+def single_book(book_id):
     response_object = {'status': 'success'}
     if request.method == 'PUT':
         post_data = request.get_json()

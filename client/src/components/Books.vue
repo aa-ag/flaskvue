@@ -218,8 +218,6 @@ export default {
     axios.put(path, payload)
       .then(() => {
         this.getBooks();
-        this.message = 'Book updated!';
-        this.showMessage = true;
       })
       .catch((error) => {
         // eslint-disable-next-line
@@ -234,7 +232,6 @@ export default {
     evt.preventDefault();
     this.$refs.editBookModal.hide();
     this.initForm();
-    this.getBooks(); // why?
   },
 };
 </script>
