@@ -28,13 +28,7 @@
               </td>
               <td>
                 <div class="btn-group" role="group">
-                  <button
-                          type="button"
-                          class="btn btn-warning btn-sm"
-                          v-b-modal.book-update-modal
-                          @click="editBook(book)">
-                      Update
-                  </button>
+                  <b-button type="submit" variant="primary">Update</b-button>
                   <button type="button" class="btn btn-danger btn-sm">Delete</button>
                 </div>
               </td>
@@ -80,9 +74,9 @@
       </b-form>
     </b-modal>
     <b-modal ref="editBookModal"
-         id="book-update-modal"
-         title="Update"
-         hide-footer>
+        id="book-update-modal"
+        title="Update"
+        hide-footer>
       <b-form @submit="onSubmitUpdate" @reset="onResetUpdate" class="w-100">
       <b-form-group id="form-title-edit-group"
                     label="Title:"
