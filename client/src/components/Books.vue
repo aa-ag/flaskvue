@@ -226,15 +226,15 @@ export default {
       };
       this.updateBook(payload, this.editForm.id);
     },
+    onResetUpdate(evt) {
+      evt.preventDefault();
+      this.$refs.editBookModal.hide();
+      this.initForm();
+      this.getBooks(); // why?
+    },
   },
   created() {
     this.getBooks();
-  },
-  onResetUpdate(evt) {
-    evt.preventDefault();
-    this.$refs.editBookModal.hide();
-    this.initForm();
-    this.getBooks(); // why?
   },
 };
 </script>
