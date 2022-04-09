@@ -28,7 +28,13 @@
               </td>
               <td>
                 <div class="btn-group" role="group">
-                  <b-button type="submit" variant="primary">Update</b-button>
+                  <button
+                          type="button"
+                          class="btn btn-warning btn-sm"
+                          v-b-modal.book-update-modal
+                          @click="editBook(book)">
+                      Update
+                  </button>
                   <button type="button" class="btn btn-danger btn-sm">Delete</button>
                 </div>
               </td>
@@ -164,6 +170,18 @@ export default {
           this.getBooks();
         });
     },
+    updateBook(payload, bookID) {
+      const path = `http://localhost:5000/books/${bookID}`;
+      axios.put(path, payload)
+        .then(() => {
+          this.getBooks();
+        })
+        .catch((error) => {
+          // eslint-disable-next-line
+          console.error(error);
+          this.getBooks();
+        });
+    },
     editBook(book) {
       this.editForm = book;
     },
@@ -206,18 +224,6 @@ export default {
       };
       this.updateBook(payload, this.editForm.id);
     },
-  },
-  updateBook(payload, bookID) {
-    const path = `http://localhost:5000/books/${bookID}`;
-    axios.put(path, payload)
-      .then(() => {
-        this.getBooks();
-      })
-      .catch((error) => {
-        // eslint-disable-next-line
-        console.error(error);
-        this.getBooks();
-      });
   },
   created() {
     this.getBooks();
