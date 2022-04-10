@@ -84,7 +84,7 @@ def single_book(book_id):
         response_object['message'] = 'Book updated!'
     
     if request.method == 'DELETE':
-        remove(book_id)
+        remove_book(book_id)
         
         response_object['message'] = 'Book removed!'
 
