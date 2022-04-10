@@ -189,6 +189,20 @@ export default {
           this.getBooks();
         });
     },
+    removeBook(bookID) {
+      const path = 'http://localhost:5000/books/${bookID}';
+      axios.delete(path)
+        .then(() => {
+          this.getBooks();
+          this.message = 'Book removed!';
+          this.showMessage = true;
+        })
+        .catch((error) => {
+          // eslint-disable-next-line
+          consore.error(error)
+          this.getBooks();
+        });
+    },
     editBook(book) {
       this.editForm = book;
     },
