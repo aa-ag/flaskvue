@@ -199,7 +199,7 @@ export default {
         })
         .catch((error) => {
           // eslint-disable-next-line
-          console.error(error)
+          console.error(error);
           this.getBooks();
         });
     },
