@@ -203,6 +203,9 @@ export default {
           this.getBooks();
         });
     },
+    onDeleteBook(book) {
+      this.removeBook(book.id);
+    },
     editBook(book) {
       this.editForm = book;
     },
