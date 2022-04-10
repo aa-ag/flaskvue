@@ -1,5 +1,6 @@
 ############------------ IMPORTS ------------############
 from crypt import methods
+from os import remove
 from flask import Flask, jsonify, request
 from flask_cors import CORS
 import uuid
@@ -81,6 +82,11 @@ def single_book(book_id):
         })
         
         response_object['message'] = 'Book updated!'
+    
+    if request.method == 'DELETE':
+        remove(book_id)
+        
+        response_object['message'] = 'Book removed!'
 
     return jsonify(response_object)
 
