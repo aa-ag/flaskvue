@@ -190,7 +190,7 @@ export default {
         });
     },
     removeBook(bookID) {
-      const path = 'http://localhost:5000/books/${bookID}';
+      const path = `http://localhost:5000/books/${bookID}`;
       axios.delete(path)
         .then(() => {
           this.getBooks();
